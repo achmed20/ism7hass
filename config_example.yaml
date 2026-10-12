@@ -1,0 +1,21 @@
+log:
+  format: text
+  level: debug
+
+ism7:
+  ip: "192.168.0.15"
+  password: "xxxxxxxx"
+  parameter: parameter.json
+  interval: 60
+
+mqtt:
+  host: "192.168.0.200"
+  port: 1883
+  # username: "admin"
+  # password: "public"
+  # qos: 0
+  # separate: false
+  # retain: false
+
+homeassistant:
+  id: WolfCHA

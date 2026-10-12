@@ -1,0 +1,32 @@
+name: "ISM 2 MQTT (GO)"
+description: "Wolf ISM7 gateway to MQTT bridge with Home Assistant discovery"
+version: "0.1.1"
+slug: "ism7"
+init: false
+arch:
+  - amd64
+  - aarch64
+services:
+  - "mqtt:want"
+map:
+  - "config:rw"
+options:
+  ism7_ip: ""
+  ism7_password: ""
+  interval: 60
+  hass_id: "WolfCHA"
+  debug_logging: false
+  mqtt_host: ""
+  mqtt_port: 1883
+  mqtt_user: ""
+  mqtt_password: ""
+schema:
+  ism7_ip: str
+  ism7_password: password
+  interval: int
+  hass_id: str
+  debug_logging: bool
+  mqtt_host: "str?"
+  mqtt_port: "int?"
+  mqtt_user: "str?"
+  mqtt_password: "password?"

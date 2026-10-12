@@ -1,0 +1,2172 @@
+{
+  "TcpPort": 9092,
+  "Devices": [
+    {
+      "Name": "BM-2",
+      "ReadBusAddress": "0x35",
+      "WriteBusAddress": "0x30",
+      "DeviceTemplateId": 220000,
+      "Parameter": [
+        {
+          "id": 220001,
+          "name": "Funktion des Bedienmoduls",
+          "enabled": true
+        },
+        {
+          "id": 220019,
+          "name": "Zeitprogramm Zirkulation Heizgerät",
+          "enabled": true
+        },
+        {
+          "id": 220021,
+          "name": "Raumeinflussfaktor",
+          "enabled": true
+        },
+        {
+          "id": 220022,
+          "name": "Außenfühler gemittelt Berechnungszeitraum",
+          "enabled": true
+        },
+        {
+          "id": 220023,
+          "name": "Antilegionellenfunktion",
+          "enabled": true
+        },
+        {
+          "id": 220025,
+          "name": "Freigabe Parallelbetrieb",
+          "enabled": true
+        },
+        {
+          "id": 220026,
+          "name": "Raumtemperaturabhängige Abschaltung",
+          "enabled": true
+        },
+        {
+          "id": 220027,
+          "name": "Absenkstopp",
+          "enabled": true
+        },
+        {
+          "id": 220028,
+          "name": "Warmwasserminimaltemperatur",
+          "enabled": true
+        },
+        {
+          "id": 220029,
+          "name": "PI-Regler Raumtemperatur Kp",
+          "enabled": true
+        },
+        {
+          "id": 220030,
+          "name": "PI-Regler Raumtemperatur Tn",
+          "enabled": true
+        },
+        {
+          "id": 220031,
+          "name": "Startzeit Antilegionellenfunktion",
+          "enabled": true
+        },
+        {
+          "id": 220032,
+          "name": "Uhrzeit",
+          "enabled": true
+        },
+        {
+          "id": 220033,
+          "name": "Datum",
+          "enabled": true
+        },
+        {
+          "id": 220034,
+          "name": "Partymodus",
+          "enabled": true
+        },
+        {
+          "id": 220035,
+          "name": "Urlaubsmodus",
+          "enabled": true
+        },
+        {
+          "id": 220036,
+          "name": "Programmwahl Lüftung",
+          "enabled": true
+        },
+        {
+          "id": 220037,
+          "name": "Zeitweise Intensivlüftung",
+          "enabled": true
+        },
+        {
+          "id": 220038,
+          "name": "Zeitweise Feuchteschutz",
+          "enabled": true
+        },
+        {
+          "id": 220039,
+          "name": "Zeitprogramm Lüftung",
+          "enabled": true
+        },
+        {
+          "id": 220040,
+          "name": "Anforderung Lüftung",
+          "enabled": true
+        },
+        {
+          "id": 220041,
+          "name": "Status Lüftung",
+          "enabled": true
+        },
+        {
+          "id": 220042,
+          "name": "1x Warmwasser",
+          "enabled": true
+        },
+        {
+          "id": 220043,
+          "name": "BUSCONFIG_Erkannte-Geraete-Low-Byte",
+          "enabled": true
+        },
+        {
+          "id": 220044,
+          "name": "BUSCONFIG_Erkannte-Geraete-High-Byte",
+          "enabled": true
+        },
+        {
+          "id": 220045,
+          "name": "BUSCONFIG_Softwareversion",
+          "enabled": true
+        },
+        {
+          "id": 220046,
+          "name": "BUSCONFIG_Sollwertkorrektur",
+          "enabled": true
+        },
+        {
+          "id": 220091,
+          "name": "SmartHome System",
+          "enabled": true
+        },
+        {
+          "id": 220092,
+          "name": "Wolf Plug-in Version",
+          "enabled": true
+        },
+        {
+          "id": 220093,
+          "name": "Winter/Sommer Umschaltung, ECO/ABS",
+          "enabled": true
+        },
+        {
+          "id": 220094,
+          "name": "Direkter Heizkreis gesteuert von",
+          "enabled": true
+        },
+        {
+          "id": 220095,
+          "name": "Freigabe SmartHome",
+          "enabled": true
+        },
+        {
+          "id": 220096,
+          "name": "Zeitprogramm",
+          "enabled": true
+        },
+        {
+          "id": 220097,
+          "name": "Raumeinfluss im BM-2",
+          "enabled": true
+        },
+        {
+          "id": 220098,
+          "name": "Raumsolltemperatur für BM-2",
+          "enabled": true
+        },
+        {
+          "id": 220099,
+          "name": "Vorgabe Sollwertkorrektur von SmartHome",
+          "enabled": true
+        },
+        {
+          "id": 220100,
+          "name": "Vorgabe absolute Vorlaufsolltemperatur von SmartHome",
+          "enabled": true
+        },
+        {
+          "id": 220101,
+          "name": "Mischerkreis 1 gesteuert von",
+          "enabled": true
+        },
+        {
+          "id": 220102,
+          "name": "Mischerkreis 2 gesteuert von",
+          "enabled": true
+        },
+        {
+          "id": 220103,
+          "name": "Außentemperatur",
+          "enabled": true
+        },
+        {
+          "id": 220104,
+          "name": "Wartungsmeldung",
+          "enabled": true
+        },
+        {
+          "id": 220105,
+          "name": "Wartung Betriebsabhängig",
+          "enabled": true
+        },
+        {
+          "id": 220106,
+          "name": "Wartung Datumsabhängig Fälligkeitsdatum",
+          "enabled": true
+        },
+        {
+          "id": 220107,
+          "name": "BUSCONFIG_Vereinfachter-Modus",
+          "enabled": true
+        },
+        {
+          "id": 220108,
+          "name": "Programmwahlschalter gemeinsam",
+          "enabled": true
+        },
+        {
+          "id": 220117,
+          "name": "Anpassung Raumfühler BM-2 0",
+          "enabled": true
+        },
+        {
+          "id": 220118,
+          "name": "Anpassung Raumfühler BM-2 1",
+          "enabled": true
+        },
+        {
+          "id": 220119,
+          "name": "Anpassung Raumfühler BM-2 2",
+          "enabled": true
+        },
+        {
+          "id": 220120,
+          "name": "Anpassung Raumfühler BM-2 3",
+          "enabled": true
+        },
+        {
+          "id": 220121,
+          "name": "Anpassung Raumfühler BM-2 4",
+          "enabled": true
+        },
+        {
+          "id": 220122,
+          "name": "Anpassung Raumfühler BM-2 5",
+          "enabled": true
+        },
+        {
+          "id": 220123,
+          "name": "Anpassung Raumfühler BM-2 6",
+          "enabled": true
+        },
+        {
+          "id": 220124,
+          "name": "Anpassung Raumfühler BM-2 7",
+          "enabled": true
+        },
+        {
+          "id": 220126,
+          "name": "Korrektur Außentemperatur",
+          "enabled": true
+        },
+        {
+          "id": 220127,
+          "name": "Reiner Raumregler",
+          "enabled": true
+        },
+        {
+          "id": 220128,
+          "name": "Wartungsmeldung Datum",
+          "enabled": true
+        },
+        {
+          "id": 220129,
+          "name": "BUSCONFIG_SmartHome-System",
+          "enabled": true
+        },
+        {
+          "id": 220130,
+          "name": "BUSCONFIG_Programmwahlschalter-Gemeinsam",
+          "enabled": true
+        },
+        {
+          "id": 220132,
+          "name": "PI-Regler Raumtemperatur Kp",
+          "enabled": false
+        },
+        {
+          "id": 220133,
+          "name": "PI-Regler Raumtemperatur Tn",
+          "enabled": false
+        },
+        {
+          "id": 220134,
+          "name": "Firmware",
+          "enabled": true
+        },
+        {
+          "id": 220135,
+          "name": "Programmwahl Lüftung",
+          "enabled": false
+        },
+        {
+          "id": 220136,
+          "name": "Status Filter",
+          "enabled": true
+        },
+        {
+          "id": 220137,
+          "name": "Fernbedienung Lüftung",
+          "enabled": true
+        },
+        {
+          "id": 220138,
+          "name": "Direktes Warmwasser gesteuert von",
+          "enabled": true
+        },
+        {
+          "id": 220139,
+          "name": "Warmwasser 1 gesteuert von",
+          "enabled": true
+        },
+        {
+          "id": 220140,
+          "name": "Warmwasser 2 gesteuert von",
+          "enabled": true
+        },
+        {
+          "id": 220141,
+          "name": "Winter-/Sommerzeitumstellung",
+          "enabled": true
+        },
+        {
+          "id": 220142,
+          "name": "Programmwahl Lüftung SmartHome",
+          "enabled": true
+        },
+        {
+          "id": 320042,
+          "name": "Mo",
+          "enabled": true
+        },
+        {
+          "id": 320043,
+          "name": "Di",
+          "enabled": true
+        },
+        {
+          "id": 320044,
+          "name": "Mi",
+          "enabled": true
+        },
+        {
+          "id": 320045,
+          "name": "Do",
+          "enabled": true
+        },
+        {
+          "id": 320046,
+          "name": "Fr",
+          "enabled": true
+        },
+        {
+          "id": 320047,
+          "name": "Sa",
+          "enabled": true
+        },
+        {
+          "id": 320048,
+          "name": "So",
+          "enabled": true
+        },
+        {
+          "id": 320049,
+          "name": "Mo",
+          "enabled": true
+        },
+        {
+          "id": 320050,
+          "name": "Di",
+          "enabled": true
+        },
+        {
+          "id": 320051,
+          "name": "Mi",
+          "enabled": true
+        },
+        {
+          "id": 320052,
+          "name": "Do",
+          "enabled": true
+        },
+        {
+          "id": 320053,
+          "name": "Fr",
+          "enabled": true
+        },
+        {
+          "id": 320054,
+          "name": "Sa",
+          "enabled": true
+        },
+        {
+          "id": 320055,
+          "name": "So",
+          "enabled": true
+        },
+        {
+          "id": 320056,
+          "name": "Mo",
+          "enabled": true
+        },
+        {
+          "id": 320057,
+          "name": "Di",
+          "enabled": true
+        },
+        {
+          "id": 320058,
+          "name": "Mi",
+          "enabled": true
+        },
+        {
+          "id": 320059,
+          "name": "Do",
+          "enabled": true
+        },
+        {
+          "id": 320060,
+          "name": "Fr",
+          "enabled": true
+        },
+        {
+          "id": 320061,
+          "name": "Sa",
+          "enabled": true
+        },
+        {
+          "id": 320062,
+          "name": "So",
+          "enabled": true
+        },
+        {
+          "id": 320378,
+          "name": "Mo",
+          "enabled": false
+        },
+        {
+          "id": 320379,
+          "name": "Di",
+          "enabled": false
+        },
+        {
+          "id": 320380,
+          "name": "Mi",
+          "enabled": false
+        },
+        {
+          "id": 320381,
+          "name": "Do",
+          "enabled": false
+        },
+        {
+          "id": 320382,
+          "name": "Fr",
+          "enabled": false
+        },
+        {
+          "id": 320383,
+          "name": "Sa",
+          "enabled": false
+        },
+        {
+          "id": 320384,
+          "name": "So",
+          "enabled": false
+        },
+        {
+          "id": 320385,
+          "name": "Mo",
+          "enabled": false
+        },
+        {
+          "id": 320386,
+          "name": "Di",
+          "enabled": false
+        },
+        {
+          "id": 320387,
+          "name": "Mi",
+          "enabled": false
+        },
+        {
+          "id": 320388,
+          "name": "Do",
+          "enabled": false
+        },
+        {
+          "id": 320389,
+          "name": "Fr",
+          "enabled": false
+        },
+        {
+          "id": 320390,
+          "name": "Sa",
+          "enabled": false
+        },
+        {
+          "id": 320391,
+          "name": "So",
+          "enabled": false
+        },
+        {
+          "id": 320392,
+          "name": "Mo",
+          "enabled": false
+        },
+        {
+          "id": 320393,
+          "name": "Di",
+          "enabled": false
+        },
+        {
+          "id": 320394,
+          "name": "Mi",
+          "enabled": false
+        },
+        {
+          "id": 320395,
+          "name": "Do",
+          "enabled": false
+        },
+        {
+          "id": 320396,
+          "name": "Fr",
+          "enabled": false
+        },
+        {
+          "id": 320397,
+          "name": "Sa",
+          "enabled": false
+        },
+        {
+          "id": 320398,
+          "name": "So",
+          "enabled": false
+        },
+        {
+          "id": 330000,
+          "name": "Uhrzeit Ende",
+          "enabled": true
+        },
+        {
+          "id": 330001,
+          "name": "Datum Ende",
+          "enabled": true
+        },
+        {
+          "id": 330002,
+          "name": "Uhrzeit Start",
+          "enabled": true
+        },
+        {
+          "id": 330003,
+          "name": "Datum Start",
+          "enabled": true
+        },
+        {
+          "id": 330004,
+          "name": "Uhrzeit BM2",
+          "enabled": true
+        },
+        {
+          "id": 330005,
+          "name": "Datum BM2",
+          "enabled": true
+        },
+        {
+          "id": 330006,
+          "name": "Uhrzeit Ende",
+          "enabled": true
+        },
+        {
+          "id": 330007,
+          "name": "Datum Ende",
+          "enabled": true
+        },
+        {
+          "id": 330008,
+          "name": "Uhrzeit Start",
+          "enabled": true
+        },
+        {
+          "id": 330009,
+          "name": "Datum Start",
+          "enabled": true
+        },
+        {
+          "id": 330010,
+          "name": "Uhrzeit BM2",
+          "enabled": true
+        },
+        {
+          "id": 330011,
+          "name": "Datum BM2",
+          "enabled": true
+        },
+        {
+          "id": 330012,
+          "name": "Uhrzeit Ende",
+          "enabled": true
+        },
+        {
+          "id": 330013,
+          "name": "Datum Ende",
+          "enabled": true
+        },
+        {
+          "id": 330014,
+          "name": "Uhrzeit Start",
+          "enabled": true
+        },
+        {
+          "id": 330015,
+          "name": "Datum Start",
+          "enabled": true
+        },
+        {
+          "id": 330016,
+          "name": "Uhrzeit BM2",
+          "enabled": false
+        },
+        {
+          "id": 330017,
+          "name": "Datum BM2",
+          "enabled": false
+        },
+        {
+          "id": 330018,
+          "name": "Uhrzeit Ende",
+          "enabled": true
+        },
+        {
+          "id": 330019,
+          "name": "Datum Ende",
+          "enabled": true
+        },
+        {
+          "id": 330020,
+          "name": "Uhrzeit Start",
+          "enabled": true
+        },
+        {
+          "id": 330021,
+          "name": "Datum Start",
+          "enabled": true
+        },
+        {
+          "id": 330022,
+          "name": "Uhrzeit BM2",
+          "enabled": false
+        },
+        {
+          "id": 330023,
+          "name": "Datum BM2",
+          "enabled": false
+        }
+      ]
+    },
+    {
+      "Name": "DHK_BM-2",
+      "ReadBusAddress": "0x35",
+      "WriteBusAddress": "0x30",
+      "DeviceTemplateId": 340000,
+      "Parameter": [
+        {
+          "id": 320000,
+          "name": "Mo",
+          "enabled": true
+        },
+        {
+          "id": 320001,
+          "name": "Di",
+          "enabled": true
+        },
+        {
+          "id": 320002,
+          "name": "Mi",
+          "enabled": true
+        },
+        {
+          "id": 320003,
+          "name": "Do",
+          "enabled": true
+        },
+        {
+          "id": 320004,
+          "name": "Fr",
+          "enabled": true
+        },
+        {
+          "id": 320005,
+          "name": "Sa",
+          "enabled": true
+        },
+        {
+          "id": 320006,
+          "name": "So",
+          "enabled": true
+        },
+        {
+          "id": 320007,
+          "name": "Mo",
+          "enabled": true
+        },
+        {
+          "id": 320008,
+          "name": "Di",
+          "enabled": true
+        },
+        {
+          "id": 320009,
+          "name": "Mi",
+          "enabled": true
+        },
+        {
+          "id": 320010,
+          "name": "Do",
+          "enabled": true
+        },
+        {
+          "id": 320011,
+          "name": "Fr",
+          "enabled": true
+        },
+        {
+          "id": 320012,
+          "name": "Sa",
+          "enabled": true
+        },
+        {
+          "id": 320013,
+          "name": "So",
+          "enabled": true
+        },
+        {
+          "id": 320014,
+          "name": "Mo",
+          "enabled": true
+        },
+        {
+          "id": 320015,
+          "name": "Di",
+          "enabled": true
+        },
+        {
+          "id": 320016,
+          "name": "Mi",
+          "enabled": true
+        },
+        {
+          "id": 320017,
+          "name": "Do",
+          "enabled": true
+        },
+        {
+          "id": 320018,
+          "name": "Fr",
+          "enabled": true
+        },
+        {
+          "id": 320019,
+          "name": "Sa",
+          "enabled": true
+        },
+        {
+          "id": 320020,
+          "name": "So",
+          "enabled": true
+        },
+        {
+          "id": 340000,
+          "name": "Raumtemperatur",
+          "enabled": true
+        },
+        {
+          "id": 340001,
+          "name": "Gemittelte Außentemperatur",
+          "enabled": true
+        },
+        {
+          "id": 340004,
+          "name": "Anforderung Heizkreis",
+          "enabled": true
+        },
+        {
+          "id": 340005,
+          "name": "Heizkreis Status",
+          "enabled": true
+        },
+        {
+          "id": 340006,
+          "name": "Sparfaktor",
+          "enabled": true
+        },
+        {
+          "id": 340007,
+          "name": "Winter/Sommer Umschaltung",
+          "enabled": true
+        },
+        {
+          "id": 340008,
+          "name": "ECO/ABS",
+          "enabled": true
+        },
+        {
+          "id": 340009,
+          "name": "Tagtemperatur",
+          "enabled": true
+        },
+        {
+          "id": 340010,
+          "name": "Raumeinfluss",
+          "enabled": true
+        },
+        {
+          "id": 340011,
+          "name": "Vorlauftemperatur",
+          "enabled": true
+        },
+        {
+          "id": 340012,
+          "name": "Sockeltemperatur Heizkurve",
+          "enabled": true
+        },
+        {
+          "id": 340013,
+          "name": "Startpunkt Heizkurve",
+          "enabled": true
+        },
+        {
+          "id": 340014,
+          "name": "Normaußentemperatur Heizkurve",
+          "enabled": true
+        },
+        {
+          "id": 340015,
+          "name": "Vorlauftemperatur Heizkurve",
+          "enabled": true
+        },
+        {
+          "id": 340016,
+          "name": "Zeitprogramm",
+          "enabled": true
+        },
+        {
+          "id": 340017,
+          "name": "Programmwahl AFB",
+          "enabled": true
+        },
+        {
+          "id": 340018,
+          "name": "Sollwertkorrektur AFB",
+          "enabled": true
+        },
+        {
+          "id": 340021,
+          "name": "Sollwertkorrektur SmartHome",
+          "enabled": true
+        },
+        {
+          "id": 340022,
+          "name": "Programmwahl SmartHome",
+          "enabled": true
+        },
+        {
+          "id": 340023,
+          "name": "Vorlaufsolltemperatur SmartHome",
+          "enabled": true
+        },
+        {
+          "id": 340026,
+          "name": "Sollwertkorrektur",
+          "enabled": false
+        },
+        {
+          "id": 340028,
+          "name": "Sollwertkorrektur",
+          "enabled": true
+        },
+        {
+          "id": 340029,
+          "name": "Programmwahl",
+          "enabled": true
+        },
+        {
+          "id": 340030,
+          "name": "Programmwahl",
+          "enabled": false
+        },
+        {
+          "id": 340031,
+          "name": "Sollwertkorrektur",
+          "enabled": false
+        },
+        {
+          "id": 340032,
+          "name": "Programmwahl",
+          "enabled": false
+        },
+        {
+          "id": 340033,
+          "name": "Reglertyp",
+          "enabled": true
+        },
+        {
+          "id": 340035,
+          "name": "Tagtemperatur",
+          "enabled": false
+        },
+        {
+          "id": 340038,
+          "name": "Tagtemperatur",
+          "enabled": true
+        },
+        {
+          "id": 340040,
+          "name": "Tagtemperatur",
+          "enabled": true
+        },
+        {
+          "id": 340041,
+          "name": "Raumtemperatur",
+          "enabled": false
+        },
+        {
+          "id": 340042,
+          "name": "Raumtemperatur",
+          "enabled": true
+        },
+        {
+          "id": 340043,
+          "name": "Heizkreis Benamung",
+          "enabled": true
+        },
+        {
+          "id": 340044,
+          "name": "Kreisart",
+          "enabled": true
+        },
+        {
+          "id": 340045,
+          "name": "aktuelle Kreisart in Kombination mit Heizgerät",
+          "enabled": true
+        },
+        {
+          "id": 340047,
+          "name": "Programmwahl",
+          "enabled": true
+        },
+        {
+          "id": 340048,
+          "name": "Programmwahl",
+          "enabled": true
+        },
+        {
+          "id": 340049,
+          "name": "Tagtemperatur Kühlen",
+          "enabled": true
+        },
+        {
+          "id": 340050,
+          "name": "Raumeinfluss Kühlen",
+          "enabled": true
+        },
+        {
+          "id": 340051,
+          "name": "Endtemperatur VL Kühlkurve",
+          "enabled": true
+        },
+        {
+          "id": 340052,
+          "name": "Starttemperatur VL Kühlkurve",
+          "enabled": true
+        },
+        {
+          "id": 340053,
+          "name": "Endpunkt Kühlkurve",
+          "enabled": true
+        },
+        {
+          "id": 340054,
+          "name": "Startpunkt Kühlkurve",
+          "enabled": true
+        },
+        {
+          "id": 340055,
+          "name": "Kühlkurve global",
+          "enabled": true
+        },
+        {
+          "id": 340059,
+          "name": "Zeitprogramm Kühlen",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "Name": "WWSystem_BM-2",
+      "ReadBusAddress": "0x35",
+      "WriteBusAddress": "0x30",
+      "DeviceTemplateId": 350000,
+      "Parameter": [
+        {
+          "id": 80001,
+          "name": "Speichertemperatur",
+          "enabled": true
+        },
+        {
+          "id": 90003,
+          "name": "Speichertemperatur",
+          "enabled": false
+        },
+        {
+          "id": 100004,
+          "name": "Speichertemperatur",
+          "enabled": false
+        },
+        {
+          "id": 110006,
+          "name": "Speichertemperatur",
+          "enabled": false
+        },
+        {
+          "id": 120005,
+          "name": "Speichertemperatur",
+          "enabled": false
+        },
+        {
+          "id": 130007,
+          "name": "Speichertemperatur",
+          "enabled": false
+        },
+        {
+          "id": 140005,
+          "name": "Speichertemperatur",
+          "enabled": false
+        },
+        {
+          "id": 150024,
+          "name": "T_WWasser",
+          "enabled": true
+        },
+        {
+          "id": 160024,
+          "name": "T_WWasser",
+          "enabled": false
+        },
+        {
+          "id": 170024,
+          "name": "T_WWasser",
+          "enabled": false
+        },
+        {
+          "id": 180006,
+          "name": "Warmwassertemperatur",
+          "enabled": false
+        },
+        {
+          "id": 200011,
+          "name": "Warmwassertemperatur",
+          "enabled": false
+        },
+        {
+          "id": 210016,
+          "name": "Warmwassertemperatur",
+          "enabled": false
+        },
+        {
+          "id": 240004,
+          "name": "Warmwassertemperatur",
+          "enabled": false
+        },
+        {
+          "id": 250003,
+          "name": "Warmwassertemperatur",
+          "enabled": false
+        },
+        {
+          "id": 270007,
+          "name": "Warmwassertemperatur",
+          "enabled": true
+        },
+        {
+          "id": 280019,
+          "name": "Warmwassertemperatur",
+          "enabled": false
+        },
+        {
+          "id": 290012,
+          "name": "Warmwassertemperatur",
+          "enabled": false
+        },
+        {
+          "id": 320021,
+          "name": "Mo",
+          "enabled": true
+        },
+        {
+          "id": 320022,
+          "name": "Di",
+          "enabled": true
+        },
+        {
+          "id": 320023,
+          "name": "Mi",
+          "enabled": true
+        },
+        {
+          "id": 320024,
+          "name": "Do",
+          "enabled": true
+        },
+        {
+          "id": 320025,
+          "name": "Fr",
+          "enabled": true
+        },
+        {
+          "id": 320026,
+          "name": "Sa",
+          "enabled": true
+        },
+        {
+          "id": 320027,
+          "name": "So",
+          "enabled": true
+        },
+        {
+          "id": 320028,
+          "name": "Mo",
+          "enabled": true
+        },
+        {
+          "id": 320029,
+          "name": "Di",
+          "enabled": true
+        },
+        {
+          "id": 320030,
+          "name": "Mi",
+          "enabled": true
+        },
+        {
+          "id": 320031,
+          "name": "Do",
+          "enabled": true
+        },
+        {
+          "id": 320032,
+          "name": "Fr",
+          "enabled": true
+        },
+        {
+          "id": 320033,
+          "name": "Sa",
+          "enabled": true
+        },
+        {
+          "id": 320034,
+          "name": "So",
+          "enabled": true
+        },
+        {
+          "id": 320035,
+          "name": "Mo",
+          "enabled": true
+        },
+        {
+          "id": 320036,
+          "name": "Di",
+          "enabled": true
+        },
+        {
+          "id": 320037,
+          "name": "Mi",
+          "enabled": true
+        },
+        {
+          "id": 320038,
+          "name": "Do",
+          "enabled": true
+        },
+        {
+          "id": 320039,
+          "name": "Fr",
+          "enabled": true
+        },
+        {
+          "id": 320040,
+          "name": "Sa",
+          "enabled": true
+        },
+        {
+          "id": 320041,
+          "name": "So",
+          "enabled": true
+        },
+        {
+          "id": 350001,
+          "name": "Warmwasser Status",
+          "enabled": true
+        },
+        {
+          "id": 350004,
+          "name": "Zeitprogramm",
+          "enabled": true
+        },
+        {
+          "id": 350005,
+          "name": "Programmwahl AFB",
+          "enabled": true
+        },
+        {
+          "id": 350009,
+          "name": "Warmwassersolltemperatur eingestellt",
+          "enabled": false
+        },
+        {
+          "id": 350011,
+          "name": "Warmwassersolltemperatur eingestellt",
+          "enabled": true
+        },
+        {
+          "id": 350012,
+          "name": "Programmwahl",
+          "enabled": false
+        },
+        {
+          "id": 350013,
+          "name": "Programmwahl",
+          "enabled": true
+        },
+        {
+          "id": 350014,
+          "name": "Warmwassersolltemperatur eingestellt",
+          "enabled": false
+        },
+        {
+          "id": 350015,
+          "name": "Programmwahl",
+          "enabled": false
+        },
+        {
+          "id": 350016,
+          "name": "Warmwasserkreis Benamung",
+          "enabled": true
+        },
+        {
+          "id": 350017,
+          "name": "Programmwahl Fernbedienung",
+          "enabled": true
+        },
+        {
+          "id": 380011,
+          "name": "Warmwassertemperatur",
+          "enabled": false
+        },
+        {
+          "id": 430011,
+          "name": "Warmwassertemperatur",
+          "enabled": false
+        },
+        {
+          "id": 440011,
+          "name": "Warmwassertemperatur",
+          "enabled": false
+        }
+      ]
+    },
+    {
+      "Name": "CHA",
+      "ReadBusAddress": "0x8",
+      "WriteBusAddress": "0x03",
+      "DeviceTemplateId": 270000,
+      "Parameter": [
+        {
+          "id": 270000,
+          "name": "BUSCONFIG_Anlagenkonfiguration",
+          "enabled": true
+        },
+        {
+          "id": 270001,
+          "name": "BUSCONFIG_Ausgang_A1",
+          "enabled": true
+        },
+        {
+          "id": 270002,
+          "name": "BUSCONFIG_Ausgang_A3",
+          "enabled": true
+        },
+        {
+          "id": 270003,
+          "name": "BUSCONFIG_Ausgang_A4",
+          "enabled": true
+        },
+        {
+          "id": 270004,
+          "name": "Kesselsolltemperatur",
+          "enabled": true
+        },
+        {
+          "id": 270005,
+          "name": "Außentemperatur",
+          "enabled": true
+        },
+        {
+          "id": 270006,
+          "name": "Kesseltemperatur",
+          "enabled": true
+        },
+        {
+          "id": 270007,
+          "name": "Warmwassertemperatur",
+          "enabled": true
+        },
+        {
+          "id": 270008,
+          "name": "Warmwassersolltemperatur",
+          "enabled": true
+        },
+        {
+          "id": 270009,
+          "name": "Rücklauftemperatur",
+          "enabled": true
+        },
+        {
+          "id": 270010,
+          "name": "Aktuelle Leistungsvorgabe Verdichter",
+          "enabled": true
+        },
+        {
+          "id": 270011,
+          "name": "Heizkreispumpe",
+          "enabled": true
+        },
+        {
+          "id": 270012,
+          "name": "Zubringer-/Heizkreispumpe",
+          "enabled": true
+        },
+        {
+          "id": 270013,
+          "name": "3-Wege-Umschaltventil HZ/WW",
+          "enabled": true
+        },
+        {
+          "id": 270014,
+          "name": "3-Wege-Umschaltventil HZ/K",
+          "enabled": true
+        },
+        {
+          "id": 270015,
+          "name": "Ausgang A1",
+          "enabled": true
+        },
+        {
+          "id": 270016,
+          "name": "E-Heizung",
+          "enabled": true
+        },
+        {
+          "id": 270017,
+          "name": "Verdichter",
+          "enabled": true
+        },
+        {
+          "id": 270018,
+          "name": "Ausgang A3",
+          "enabled": true
+        },
+        {
+          "id": 270019,
+          "name": "Ausgang A4",
+          "enabled": true
+        },
+        {
+          "id": 270020,
+          "name": "E-Heizung Phase 1",
+          "enabled": true
+        },
+        {
+          "id": 270021,
+          "name": "E-Heizung Phase 2 und 3",
+          "enabled": true
+        },
+        {
+          "id": 270022,
+          "name": "HCM-4 Firmware",
+          "enabled": true
+        },
+        {
+          "id": 270023,
+          "name": "HPM-2 Firmware",
+          "enabled": true
+        },
+        {
+          "id": 270024,
+          "name": "Leistungsklasse",
+          "enabled": true
+        },
+        {
+          "id": 270025,
+          "name": "Verdichterstarts",
+          "enabled": true
+        },
+        {
+          "id": 270026,
+          "name": "Netzbetriebsstunden",
+          "enabled": true
+        },
+        {
+          "id": 270027,
+          "name": "Betriebsstunden Verdichter",
+          "enabled": true
+        },
+        {
+          "id": 270028,
+          "name": "Heizkreisdurchfluss",
+          "enabled": true
+        },
+        {
+          "id": 270029,
+          "name": "Sammlertemperatur",
+          "enabled": true
+        },
+        {
+          "id": 270030,
+          "name": "Anlagendruck",
+          "enabled": true
+        },
+        {
+          "id": 270031,
+          "name": "Eingang E1",
+          "enabled": true
+        },
+        {
+          "id": 270032,
+          "name": "Eingang E3",
+          "enabled": true
+        },
+        {
+          "id": 270033,
+          "name": "Eingang E4",
+          "enabled": true
+        },
+        {
+          "id": 270034,
+          "name": "Status TPW",
+          "enabled": true
+        },
+        {
+          "id": 270035,
+          "name": "Drehzahl ZHP",
+          "enabled": true
+        },
+        {
+          "id": 270036,
+          "name": "Anzahl Netz Ein",
+          "enabled": true
+        },
+        {
+          "id": 270037,
+          "name": "Status SG",
+          "enabled": true
+        },
+        {
+          "id": 270038,
+          "name": "Betriebsstunden E-Heizung",
+          "enabled": true
+        },
+        {
+          "id": 270039,
+          "name": "Status PV",
+          "enabled": true
+        },
+        {
+          "id": 270040,
+          "name": "Zulufttemperatur",
+          "enabled": true
+        },
+        {
+          "id": 270041,
+          "name": "Heißgastemperatur",
+          "enabled": true
+        },
+        {
+          "id": 270042,
+          "name": "Sauggastemperatur",
+          "enabled": true
+        },
+        {
+          "id": 270043,
+          "name": "Ablufttemperatur",
+          "enabled": true
+        },
+        {
+          "id": 270044,
+          "name": "Kesseltemperatur 2",
+          "enabled": true
+        },
+        {
+          "id": 270045,
+          "name": "Kühlleistung",
+          "enabled": true
+        },
+        {
+          "id": 270046,
+          "name": "Heizleistung",
+          "enabled": true
+        },
+        {
+          "id": 270047,
+          "name": "Drehzahl Ventilator",
+          "enabled": true
+        },
+        {
+          "id": 270048,
+          "name": "Verdichterfrequenz",
+          "enabled": true
+        },
+        {
+          "id": 270049,
+          "name": "Leistungsaufnahme (WP + EHZ)",
+          "enabled": true
+        },
+        {
+          "id": 270050,
+          "name": "Betriebsart Heizgerät",
+          "enabled": true
+        },
+        {
+          "id": 270051,
+          "name": "Verdichterstatus",
+          "enabled": true
+        },
+        {
+          "id": 270052,
+          "name": "Status E-Heizung",
+          "enabled": true
+        },
+        {
+          "id": 270053,
+          "name": "Status Zusatzwärmeerzeuger",
+          "enabled": true
+        },
+        {
+          "id": 270055,
+          "name": "Korrektur T_Kessel",
+          "enabled": true
+        },
+        {
+          "id": 270056,
+          "name": "Korrektur T_Kessel_2",
+          "enabled": true
+        },
+        {
+          "id": 270057,
+          "name": "Korrektur T_Rücklauf",
+          "enabled": true
+        },
+        {
+          "id": 270058,
+          "name": "Aktuelle Sekundärleistung",
+          "enabled": true
+        },
+        {
+          "id": 270059,
+          "name": "Energiemenge HZ",
+          "enabled": true
+        },
+        {
+          "id": 270060,
+          "name": "Energiemenge WW",
+          "enabled": true
+        },
+        {
+          "id": 270061,
+          "name": "Energiemenge Kühl.",
+          "enabled": true
+        },
+        {
+          "id": 270062,
+          "name": "Warmwasser vorhanden",
+          "enabled": true
+        },
+        {
+          "id": 270063,
+          "name": "P_Heißgas",
+          "enabled": true
+        },
+        {
+          "id": 270064,
+          "name": "P_Sauggas",
+          "enabled": true
+        },
+        {
+          "id": 270065,
+          "name": "EEV HZ",
+          "enabled": true
+        },
+        {
+          "id": 270066,
+          "name": "EEV K",
+          "enabled": true
+        },
+        {
+          "id": 270067,
+          "name": "Anlagenkonfiguration",
+          "enabled": true
+        },
+        {
+          "id": 270068,
+          "name": "Funktion Eingang E1",
+          "enabled": true
+        },
+        {
+          "id": 270069,
+          "name": "Funktion Ausgang A1",
+          "enabled": true
+        },
+        {
+          "id": 270070,
+          "name": "Funktion Eingang E3",
+          "enabled": true
+        },
+        {
+          "id": 270071,
+          "name": "Funktion Ausgang A3",
+          "enabled": true
+        },
+        {
+          "id": 270072,
+          "name": "Funktion Eingang E4",
+          "enabled": true
+        },
+        {
+          "id": 270073,
+          "name": "Funktion Ausgang A4",
+          "enabled": true
+        },
+        {
+          "id": 270074,
+          "name": "Temperaturüberhöhung Sammler",
+          "enabled": true
+        },
+        {
+          "id": 270075,
+          "name": "Soll-Spreizung",
+          "enabled": true
+        },
+        {
+          "id": 270076,
+          "name": "Hysterese Heizbetrieb",
+          "enabled": true
+        },
+        {
+          "id": 270077,
+          "name": "Nachlauf ZHP",
+          "enabled": true
+        },
+        {
+          "id": 270078,
+          "name": "Verzögerung ZWE Heizung",
+          "enabled": true
+        },
+        {
+          "id": 270079,
+          "name": "Nachlauf HKP",
+          "enabled": true
+        },
+        {
+          "id": 270080,
+          "name": "Pumpenleistung HK maximal",
+          "enabled": true
+        },
+        {
+          "id": 270081,
+          "name": "Freigabe Spreizungsregelung",
+          "enabled": true
+        },
+        {
+          "id": 270082,
+          "name": "Kesselmaximaltemp HZ TV-max",
+          "enabled": true
+        },
+        {
+          "id": 270083,
+          "name": "Kesselminimaltemp TK-min",
+          "enabled": true
+        },
+        {
+          "id": 270084,
+          "name": "Pumpenleistung HK minimal",
+          "enabled": true
+        },
+        {
+          "id": 270085,
+          "name": "Hysterese Warmwasserbetrieb",
+          "enabled": true
+        },
+        {
+          "id": 270086,
+          "name": "Freigabe max. Zeit Warmwasserbetrieb",
+          "enabled": true
+        },
+        {
+          "id": 270087,
+          "name": "Max. Zeit Warmwasserbetrieb",
+          "enabled": true
+        },
+        {
+          "id": 270088,
+          "name": "Verz. ZWE Warmwasserbetrieb",
+          "enabled": true
+        },
+        {
+          "id": 270089,
+          "name": "SG/PV",
+          "enabled": true
+        },
+        {
+          "id": 270090,
+          "name": "Externe Anhebung HZ",
+          "enabled": true
+        },
+        {
+          "id": 270091,
+          "name": "Externe Anhebung WW",
+          "enabled": true
+        },
+        {
+          "id": 270092,
+          "name": "WEZ-Management bei SG/PV",
+          "enabled": true
+        },
+        {
+          "id": 270093,
+          "name": "Busadresse",
+          "enabled": true
+        },
+        {
+          "id": 270094,
+          "name": "Auswirkung SG/PV auf Heizbetrieb",
+          "enabled": true
+        },
+        {
+          "id": 270095,
+          "name": "Auswirkung SG/PV auf Kühlbetrieb",
+          "enabled": true
+        },
+        {
+          "id": 270096,
+          "name": "Bivalenzpunkt Verdichter SG/PV",
+          "enabled": true
+        },
+        {
+          "id": 270097,
+          "name": "Bivalenzpunkt EHZ SG/PV",
+          "enabled": true
+        },
+        {
+          "id": 270098,
+          "name": "Bivalenzpunkt ZWE SG/PV",
+          "enabled": true
+        },
+        {
+          "id": 270099,
+          "name": "Externe Absenkung K",
+          "enabled": true
+        },
+        {
+          "id": 270100,
+          "name": "Pumpenleistung WW",
+          "enabled": true
+        },
+        {
+          "id": 270101,
+          "name": "Aussentemp. Freigabe Kühlbetrieb",
+          "enabled": true
+        },
+        {
+          "id": 270102,
+          "name": "Min. Vorlauftemperatur für Kühlbetrieb",
+          "enabled": true
+        },
+        {
+          "id": 270103,
+          "name": "Freigabe Kühlbetrieb",
+          "enabled": true
+        },
+        {
+          "id": 270104,
+          "name": "Hysterese Kühlbetrieb",
+          "enabled": true
+        },
+        {
+          "id": 270105,
+          "name": "Nachtbetrieb Ende",
+          "enabled": true
+        },
+        {
+          "id": 270106,
+          "name": "Nachtbetrieb Start",
+          "enabled": true
+        },
+        {
+          "id": 270107,
+          "name": "Limitierung Nachtbetrieb",
+          "enabled": true
+        },
+        {
+          "id": 270108,
+          "name": "Limitierung Tagbetrieb",
+          "enabled": true
+        },
+        {
+          "id": 270109,
+          "name": "Aktivierung Nachtbetrieb",
+          "enabled": true
+        },
+        {
+          "id": 270110,
+          "name": "T_Zuluft keine Abtauung",
+          "enabled": true
+        },
+        {
+          "id": 270111,
+          "name": "Sperrzeit Abtauung",
+          "enabled": true
+        },
+        {
+          "id": 270112,
+          "name": "Max. Zeit Abtaubetrieb",
+          "enabled": true
+        },
+        {
+          "id": 270113,
+          "name": "Laufzeit Lüfter nach Abtaubetrieb",
+          "enabled": true
+        },
+        {
+          "id": 270114,
+          "name": "Bivalenzpunkt Verdichter",
+          "enabled": true
+        },
+        {
+          "id": 270115,
+          "name": "Freigabe E-Heizung für HZ-Betrieb",
+          "enabled": true
+        },
+        {
+          "id": 270116,
+          "name": "Bivalenzpunkt E-Heizung",
+          "enabled": true
+        },
+        {
+          "id": 270117,
+          "name": "EVU-Sperre für E-Heizung",
+          "enabled": true
+        },
+        {
+          "id": 270118,
+          "name": "Typ E-Heizung",
+          "enabled": true
+        },
+        {
+          "id": 270119,
+          "name": "Freigabe EHZ Warmwasserbetrieb",
+          "enabled": true
+        },
+        {
+          "id": 270120,
+          "name": "Bivalenzpunkt ZWE",
+          "enabled": true
+        },
+        {
+          "id": 270121,
+          "name": "Priorität ZWE Heizbetrieb",
+          "enabled": true
+        },
+        {
+          "id": 270122,
+          "name": "Priorität ZWE Warmwasserbetrieb",
+          "enabled": true
+        },
+        {
+          "id": 270123,
+          "name": "ZWE über eBus",
+          "enabled": true
+        },
+        {
+          "id": 270124,
+          "name": "EVU-Sperre ZWE",
+          "enabled": true
+        },
+        {
+          "id": 270125,
+          "name": "Wertigkeit der S0-Impulse CHA",
+          "enabled": true
+        },
+        {
+          "id": 270126,
+          "name": "Wertigkeit der S0-Impulse Einspeisezähler",
+          "enabled": true
+        },
+        {
+          "id": 270128,
+          "name": "Aktueller Energiepreis ZWE",
+          "enabled": true
+        },
+        {
+          "id": 270129,
+          "name": "Aktueller Strompreis",
+          "enabled": true
+        },
+        {
+          "id": 270130,
+          "name": "Hybridbetrieb",
+          "enabled": true
+        },
+        {
+          "id": 270134,
+          "name": "Energie VT (el.)",
+          "enabled": true
+        },
+        {
+          "id": 270135,
+          "name": "Energie VT (th.)",
+          "enabled": true
+        },
+        {
+          "id": 270136,
+          "name": "Energie VT (TAZ)",
+          "enabled": true
+        },
+        {
+          "id": 270137,
+          "name": "Energie HP (el.)",
+          "enabled": true
+        },
+        {
+          "id": 270138,
+          "name": "Energie HP (th.)",
+          "enabled": true
+        },
+        {
+          "id": 270139,
+          "name": "Energie HP (JAZ)",
+          "enabled": true
+        },
+        {
+          "id": 270140,
+          "name": "Energie VJ (el.)",
+          "enabled": true
+        },
+        {
+          "id": 270141,
+          "name": "Energie VJ (th.)",
+          "enabled": true
+        },
+        {
+          "id": 270142,
+          "name": "Energie VJ (JAZ)",
+          "enabled": true
+        },
+        {
+          "id": 270143,
+          "name": "Verdichter max. Starts pro Stunde",
+          "enabled": true
+        },
+        {
+          "id": 270144,
+          "name": "Status Nachtbetrieb",
+          "enabled": true
+        },
+        {
+          "id": 270145,
+          "name": "Warmwasser Betriebsart",
+          "enabled": true
+        },
+        {
+          "id": 270146,
+          "name": "Betriebsart Verdichter",
+          "enabled": true
+        },
+        {
+          "id": 270149,
+          "name": "PRELOAD_Firmware",
+          "enabled": true
+        },
+        {
+          "id": 270150,
+          "name": "PRELOAD_Herstellwoche",
+          "enabled": true
+        },
+        {
+          "id": 270151,
+          "name": "PRELOAD_Herstelljahr",
+          "enabled": true
+        },
+        {
+          "id": 270152,
+          "name": "PRELOAD_Seriennummer",
+          "enabled": true
+        },
+        {
+          "id": 270154,
+          "name": "Erweiterungsfunktionen für Export",
+          "enabled": true
+        },
+        {
+          "id": 270155,
+          "name": "Vorlauftemperatur für Poolbetrieb",
+          "enabled": true
+        },
+        {
+          "id": 270156,
+          "name": "Verzögerung ZWE Poolbetrieb",
+          "enabled": true
+        },
+        {
+          "id": 270157,
+          "name": "Freigabe ZWE Poolbetrieb",
+          "enabled": true
+        },
+        {
+          "id": 270158,
+          "name": "Sub-Störcode",
+          "enabled": true
+        },
+        {
+          "id": 270159,
+          "name": "erweiterte Statistik aktiv",
+          "enabled": true
+        },
+        {
+          "id": 270160,
+          "name": "Verbrauch aktueller Tag",
+          "enabled": true
+        },
+        {
+          "id": 270161,
+          "name": "Erzeugte Wärmemenge aktueller Tag",
+          "enabled": true
+        },
+        {
+          "id": 270162,
+          "name": "Verbrauch aktueller Monat",
+          "enabled": true
+        },
+        {
+          "id": 270163,
+          "name": "Erzeugte Wärmemenge aktueller Monat",
+          "enabled": true
+        },
+        {
+          "id": 270164,
+          "name": "Verbrauch aktuelles Jahr",
+          "enabled": true
+        },
+        {
+          "id": 270165,
+          "name": "Erzeugte Wärmemenge aktuelles Jahr",
+          "enabled": true
+        },
+        {
+          "id": 270166,
+          "name": "Verbrauch Vorjahr",
+          "enabled": true
+        },
+        {
+          "id": 270167,
+          "name": "Erzeugte Wärmemenge Vorjahr",
+          "enabled": true
+        },
+        {
+          "id": 270168,
+          "name": "Verbrauch Vorvorjahr",
+          "enabled": true
+        },
+        {
+          "id": 270169,
+          "name": "Erzeugte Wärmemenge Vorvorjahr",
+          "enabled": true
+        },
+        {
+          "id": 270170,
+          "name": "TAZ aktueller Tag",
+          "enabled": true
+        },
+        {
+          "id": 270171,
+          "name": "MAZ aktueller Monat",
+          "enabled": true
+        },
+        {
+          "id": 270172,
+          "name": "JAZ aktuelles Jahr",
+          "enabled": true
+        },
+        {
+          "id": 270173,
+          "name": "JAZ Vorjahr",
+          "enabled": true
+        },
+        {
+          "id": 270174,
+          "name": "JAZ Vorvorjahr",
+          "enabled": true
+        },
+        {
+          "id": 270175,
+          "name": "Verbrauch Vortag",
+          "enabled": true
+        },
+        {
+          "id": 270176,
+          "name": "Erzeugte Wärmemenge Vortag",
+          "enabled": true
+        },
+        {
+          "id": 270177,
+          "name": "TAZ Vortag",
+          "enabled": true
+        },
+        {
+          "id": 270178,
+          "name": "Herstellwoche",
+          "enabled": true
+        },
+        {
+          "id": 270179,
+          "name": "Herstelljahr",
+          "enabled": true
+        },
+        {
+          "id": 270180,
+          "name": "Seriennummer",
+          "enabled": true
+        }
+      ]
+    }
+  ]
+}

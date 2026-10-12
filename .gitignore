@@ -1,0 +1,11 @@
+main
+main.exe
+.vscode
+.idea
+swagger.json
+.test_*
+.env
+.keys
+vendor
+.build/*addon/src/
+config.yaml
