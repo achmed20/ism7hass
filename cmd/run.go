@@ -84,6 +84,15 @@ var runCmd = &cobra.Command{
 		}
 		defer bridge.Close()
 
+		cleaned := false
+		var lastData atomic.Int64
+		lastData.Store(time.Now().UnixNano())
+		if c.ISM7.RebootTimeout > 0 {
+			// a healthy gateway must be able to deliver at least a few push cycles within the timeout
+			timeout := max(time.Duration(c.ISM7.RebootTimeout)*time.Minute, 3*time.Duration(c.ISM7.Interval)*time.Second)
+			go watchdog(ctx, &lastData, timeout, c.ISM7.IP, c.ISM7.Password)
+		}
+
 		port := cf.TcpPort
 		for ctx.Err() == nil {
 			cl := ism7.NewClient(ism7.Options{
@@ -91,10 +100,17 @@ var runCmd = &cobra.Command{
 				StartupTimeout:      time.Duration(c.ISM7.StartupTimeout) * time.Second,
 				SerializeSubscribes: c.ISM7.SerializePushSubscribes, Debug: c.ISM7.Debug,
 			}, cfg)
-			cl.OnData = bridge.Publish
+			cl.OnData = func() {
+				lastData.Store(time.Now().UnixNano())
+				bridge.Publish()
+			}
 			cl.OnInitialized = func() {
 				current.Store(cl)
 				if disc != nil {
+					if !cleaned {
+						cleaned = true
+						disc.Cleanup(bridge.Retained("homeassistant/+/+/config", 2*time.Second))
+					}
 					disc.Publish()
 				}
 				slog.Info("ism7 initialized")
@@ -114,6 +130,29 @@ var runCmd = &cobra.Command{
 	},
 }
 
+func stale(last, now time.Time, timeout time.Duration) bool { return now.Sub(last) >= timeout }
+
+// watchdog reboots the gateway when no values arrived for timeout; the reboot restarts the clock (grace period).
+func watchdog(ctx context.Context, lastData *atomic.Int64, timeout time.Duration, ip, password string) {
+	t := time.NewTicker(30 * time.Second)
+	defer t.Stop()
+	for {
+		select {
+		case <-ctx.Done():
+			return
+		case <-t.C:
+		}
+		if !stale(time.Unix(0, lastData.Load()), time.Now(), timeout) {
+			continue
+		}
+		slog.Warn("no values received, rebooting ism7", "timeout", timeout)
+		if err := ism7.Reboot(ctx, "http://"+ip, password); err != nil {
+			slog.Error("ism7 reboot failed", "error", err)
+		}
+		lastData.Store(time.Now().UnixNano())
+	}
+}
+
 func init() {
 	rootCmd.AddCommand(runCmd)
 	f := runCmd.Flags()
@@ -123,6 +162,7 @@ func init() {
 	f.String("parameter-xml-override", "", "ADVANCED: replace the built-in parameter.xml")
 	f.Int("interval", 0, "push interval in seconds (default 60)")
 	f.Int("startup-timeout", 0, "seconds to wait for each response during startup (default 90)")
+	f.Int("reboot-timeout", 0, "reboot the ISM7 after this many minutes without values, 0 disables (default 5)")
 	f.Bool("serialize-push-subscribes", false, "send push subscribes one at a time (some FW 5.20 devices)")
 	f.BoolP("debug", "d", false, "dump raw protocol XML (includes your password!)")
 	f.String("mqtt-host", "", "MQTT broker host")

@@ -66,11 +66,11 @@ after startup and again when `homeassistant/status` receives a message. It impli
   device only accepts that suite the handshake fails.
 - The ISM7 only accepts one connection: Smartset (or a second bridge) cannot connect while this runs.
 
-## Home Assistant app (local)
+## Home Assistant app
 
-`addon/` is a local app. Run `addon/build.sh` (copies the Go source into `addon/src/`), copy `addon/` to
-`/addons/ism7` on the Home Assistant host, then install it from the local apps in the store; it is compiled on the host.
-Options: `ism7_ip`, `ism7_password`, `interval`, `hass_id` (default `wolf`), `debug_logging`. The MQTT broker is either
+Settings, Apps, App store, menu (three dots), Repositories, add `https://github.com/achmed20/ism7hass`, then install
+"ISM 2 MQTT (GO)". The image is built on the host by cloning `main` of this repo.
+Options: `ism7_ip`, `ism7_password`, `interval`, `reboot_timeout` (minutes without values before the ISM7 is rebooted, 0 disables), `hass_id` (default `wolf`), `debug_logging`. The MQTT broker is either
 `mqtt_host`/`mqtt_port`/`mqtt_user`/`mqtt_password` (if `mqtt_host` is set) or the Supervisor's MQTT service
 (Mosquitto app). `parameter.json` is generated at `/config/ism7/parameter.json` on first start. Bump `version` in
-`addon/config.yaml` when updating so Home Assistant rebuilds.
+`addon/config.yaml` for every release so Home Assistant rebuilds with the latest code.

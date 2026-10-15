@@ -35,6 +35,26 @@ func (d *Discovery) Publish() {
 	slog.Info("home assistant discovery published", "entities", n)
 }
 
+// Cleanup clears (empty retained payload) every given discovery topic of this id that is no longer published.
+func (d *Discovery) Cleanup(retained []string) {
+	current := map[string]bool{}
+	for _, m := range d.Messages() {
+		current[m.Topic] = true
+	}
+	prefix := laundry(d.ID + "_")
+	n := 0
+	for _, t := range retained {
+		parts := strings.Split(t, "/")
+		if len(parts) != 4 || parts[0] != "homeassistant" || parts[3] != "config" ||
+			!strings.HasPrefix(parts[2], prefix) || current[t] {
+			continue
+		}
+		d.Send(t, "")
+		n++
+	}
+	slog.Info("home assistant stale entities removed", "entities", n)
+}
+
 type Message struct {
 	Topic   string
 	Payload map[string]any

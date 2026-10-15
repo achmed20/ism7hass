@@ -63,3 +63,22 @@ func TestDiscovery_Messages(t *testing.T) {
 	require.NotNil(t, ro)
 	assert.NotContains(t, ro, "command_topic")
 }
+
+func TestDiscovery_Cleanup(t *testing.T) {
+	cfg, err := ism7.NewConfig(
+		&ism7.ConfigFile{Devices: []ism7.ConfigDevice{{ReadBusAddress: "0x35", DeviceTemplateID: 1, Parameter: []ism7.ConfigParameter{{ID: 4}}}}},
+		&ism7.Templates{
+			Devices:    []ism7.DeviceDef{{DTID: 1, Name: "BM-2"}},
+			Converters: []ism7.ConverterDef{{Kind: "NumericConverter16Template", CTID: 4, Type: "SS10", TelegramNr: u(4)}},
+			Parameters: []ism7.ParameterDef{{Kind: "NumericParameterDescriptor", PTID: 4, Name: "Temp", ReadOnly: "True"}},
+		}, "1.2.3.4")
+	require.NoError(t, err)
+	var cleared []string
+	d := &Discovery{ID: "wolf", IP: "1.2.3.4", Cfg: cfg, Send: func(topic, payload string) {
+		assert.Empty(t, payload)
+		cleared = append(cleared, topic)
+	}}
+	current := d.Messages()[0].Topic
+	d.Cleanup([]string{current, "homeassistant/sensor/wolf_old/config", "homeassistant/sensor/other_x/config", "homeassistant/sensor/wolf2_x/config"})
+	assert.Equal(t, []string{"homeassistant/sensor/wolf_old/config"}, cleared)
+}

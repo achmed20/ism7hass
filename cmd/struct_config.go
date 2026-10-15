@@ -17,6 +17,7 @@ type Config struct {
 		ParameterXMLOverride    string
 		Interval                int
 		StartupTimeout          int
+		RebootTimeout           int // minutes without values before the gateway is rebooted; 0 disables
 		SerializePushSubscribes bool
 		Debug                   bool
 	}
@@ -47,6 +48,7 @@ func (c *Config) SetDefaults() {
 	viper.SetDefault("ism7.parameter", "parameter.json")
 	viper.SetDefault("ism7.interval", 60)
 	viper.SetDefault("ism7.startuptimeout", 90)
+	viper.SetDefault("ism7.reboottimeout", 5)
 
 	viper.SetDefault("config.enabled", true)
 	viper.SetDefault("mqtt.port", 1883)
@@ -59,6 +61,7 @@ func (c *Config) SetDefaults() {
 		"ism7.parameterxmloverride":    "ISM7_PARAMETER_XML_OVERRIDE",
 		"ism7.interval":                "ISM7_INTERVAL",
 		"ism7.startuptimeout":          "ISM7_STARTUP_TIMEOUT",
+		"ism7.reboottimeout":           "ISM7_REBOOT_TIMEOUT",
 		"ism7.serializepushsubscribes": "ISM7_SERIALIZE_PUSH_SUBSCRIBES",
 		"ism7.debug":                   "ISM7_DEBUG",
 		"mqtt.host":                    "ISM7_MQTTHOST",

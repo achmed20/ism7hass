@@ -25,6 +25,7 @@ args=(run
   -t /config/ism7/parameter.json
   --hass-id "$(bashio::config 'hass_id')"
   --interval "$(bashio::config 'interval')"
+  --reboot-timeout "$(bashio::config 'reboot_timeout')"
   --log-format text)
 [ -n "$user" ] && args+=(--mqtt-user "$user")
 [ -n "$pass" ] && args+=(--mqtt-pass "$pass")

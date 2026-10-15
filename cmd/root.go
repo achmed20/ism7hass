@@ -19,7 +19,7 @@ var config Config
 var flagKeys = map[string]string{
 	"ip": "ism7.ip", "password": "ism7.password", "parameter": "ism7.parameter",
 	"parameter-xml-override": "ism7.parameterxmloverride", "interval": "ism7.interval",
-	"startup-timeout": "ism7.startuptimeout", "serialize-push-subscribes": "ism7.serializepushsubscribes",
+	"startup-timeout": "ism7.startuptimeout", "reboot-timeout": "ism7.reboottimeout", "serialize-push-subscribes": "ism7.serializepushsubscribes",
 	"debug": "ism7.debug", "mqtt-host": "mqtt.host", "mqtt-port": "mqtt.port", "mqtt-user": "mqtt.username",
 	"mqtt-pass": "mqtt.password", "mqtt-qos": "mqtt.qos", "separate": "mqtt.separate", "retain": "mqtt.retain",
 	"hass-id": "homeassistant.id", "enabled": "config.enabled",

@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log/slog"
 	"strings"
+	"sync"
 	"time"
 
 	"ism7/internal/ism7"
@@ -89,6 +90,25 @@ func (b *Bridge) Publish() {
 		slog.Debug("mqtt publish", "topic", m.Topic, "payload", m.Payload)
 		b.client.Publish(m.Topic, b.opts.QoS, b.opts.Retain, m.Payload)
 	}
+}
+
+// Retained returns the topics matching filter that carry a retained message, collected for the given time.
+func (b *Bridge) Retained(filter string, wait time.Duration) []string {
+	var mu sync.Mutex
+	var topics []string
+	t := b.client.Subscribe(filter, b.opts.QoS, func(_ paho.Client, m paho.Message) {
+		if len(m.Payload()) > 0 {
+			mu.Lock()
+			topics = append(topics, m.Topic())
+			mu.Unlock()
+		}
+	})
+	t.Wait()
+	time.Sleep(wait)
+	b.client.Unsubscribe(filter).Wait()
+	mu.Lock()
+	defer mu.Unlock()
+	return topics
 }
 
 // PublishRaw publishes an arbitrary message (used by Home Assistant discovery).

@@ -41,6 +41,7 @@ type Client struct {
 	login    chan *LoginResp
 	sysconf  chan *SystemconfigResp
 	lastKA   atomic.Int32
+	lastWr   atomic.Int64 // unix nanos of the previous write, for diagnostics
 }
 
 func NewClient(opts Options, cfg *Config) *Client {
@@ -230,6 +231,10 @@ func (c *Client) wait(ctx context.Context, done chan error) error {
 
 // Write sends write telegrams; the response updates values and triggers OnData.
 func (c *Client) Write(writes []InfoWrite) error {
+	now := time.Now()
+	if prev := c.lastWr.Swap(now.UnixNano()); prev != 0 {
+		slog.Info("sending write", "since_previous", now.Sub(time.Unix(0, prev)).Round(time.Second))
+	}
 	id := c.cfg.NewBundleID()
 	c.handle(id, false, func(r *BundleResp) {
 		if err := checkResp(r); err != nil {
